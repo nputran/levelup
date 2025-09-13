@@ -7,6 +7,8 @@
 
     "lib": ["DOM", "ES2023", "esnext.disposable"],
 
+    "rootDir": "src",
+
     "outDir": "../../dist/types/client",
 
     // React
@@ -15,7 +17,7 @@
     "tsBuildInfoFile": "../../dist/client/tsconfig.tsbuildinfo"
   },
   // https://github.com/Microsoft/TypeScript/issues/25636
-  "include": ["**/*", "**/*.json"],
+  "include": ["src"],
   "exclude": ["**/*.test.ts"],
   "references": [{ "path": "../shared" }]
 }
