@@ -47,7 +47,7 @@ const GamePlay: React.FC<GamePlayProps> = ({ onFinish }) => {
     }
 
     // Shuffle emoji pool for calling
-    const shuffled = [...masterEmojis].sort(() => 0.5 - Math.random());
+    const shuffled = [...masterEmojis].sort(() => 0.3 - Math.random());
     setEmojiPool(shuffled);
 
     setLoading(false);
