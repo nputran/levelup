@@ -65,8 +65,10 @@ const BoardSetup: React.FC<BoardSetupProps> = ({ onComplete }) => {
   };
 
   const finishBoard = async (finalBoard: string[]) => {
-    // TODO: save board to Supabase boards table here
-    console.log('Final board:', finalBoard);
+    // Save Bingo board to the localStorage
+    localStorage.setItem('bingoBoard', JSON.stringify(finalBoard));
+
+    console.log('Final board saved:', finalBoard);
     onComplete();
   };
 
@@ -209,7 +211,7 @@ const BoardSetup: React.FC<BoardSetupProps> = ({ onComplete }) => {
         <button
           onClick={handleRandomize}
           style={{
-            backgroundColor: '#DC2626',
+            backgroundColor: '#62aec5',
             color: 'white',
             padding: '12px 16px',
             borderRadius: '12px',
@@ -226,7 +228,7 @@ const BoardSetup: React.FC<BoardSetupProps> = ({ onComplete }) => {
           onClick={() => finishBoard(selectedEmojis as string[])}
           disabled={selectedEmojis.some((e) => !e)}
           style={{
-            backgroundColor: selectedEmojis.length === BOARD_SIZE ? '#16A34A' : '#A7F3D0',
+            backgroundColor: selectedEmojis.length === BOARD_SIZE ? '#f678a7' : '#f678a7',
             color: selectedEmojis.length === BOARD_SIZE ? 'white' : '#065F46',
             padding: '12px 16px',
             borderRadius: '12px',
