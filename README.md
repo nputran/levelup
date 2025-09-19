@@ -1,31 +1,52 @@
-## Devvit React Starter
+# 🎉 Bingoji 🎉  
 
-A starter to build web applications on Reddit's developer platform
+Bingoji is a fun twist on classic Bingo — but with emojis instead of numbers!  
+Build your own emoji board, watch emojis get called in real time, and race to complete a line.  
 
-- [Devvit](https://developers.reddit.com/): A way to build and deploy immersive games on Reddit
-- [Vite](https://vite.dev/): For compiling the webView
-- [React](https://react.dev/): For UI
-- [Express](https://expressjs.com/): For backend logic
-- [Tailwind](https://tailwindcss.com/): For styles
-- [Typescript](https://www.typescriptlang.org/): For type safety
+![Bingoji Screenshot](./public/bingoji-logo.svg)
 
-## Getting Started
+---
 
-> Make sure you have Node 22 downloaded on your machine before running!
+## ✨ Features  
+- 🟩 **Emoji Bingo Board** – Customize your 5x5 board with emojis  
+- 🎲 **Randomize Option** – Fill your board instantly with random emojis  
+- ⏳ **Live Gameplay** – New emojis are called every 5 seconds  
+- 🎵 **Background Music** – Play or mute in-game music  
+- 🏆 **Game Result Screen** – Celebrate wins with a clean finish page  
+- 📖 **Tutorial Mode** – Learn how to play before jumping in  
 
-1. Run `npm create devvit@latest --template=react`
-2. Go through the installation wizard. You will need to create a Reddit account and connect it to Reddit developers
-3. Copy the command on the success page into your terminal
+---
 
-## Commands
+## 🚀 Getting Started  
 
-- `npm run dev`: Starts a development server where you can develop your application live on Reddit.
-- `npm run build`: Builds your client and server projects
-- `npm run deploy`: Uploads a new version of your app
-- `npm run launch`: Publishes your app for review
-- `npm run login`: Logs your CLI into Reddit
-- `npm run check`: Type checks, lints, and prettifies your app
+### 1. Clone the repo  
+```bash
+git clone https://github.com/yourusername/bingoji.git
+cd bingoji
+```
 
-## Cursor Integration
+### 2. Install dependencies
+```bash
+npm install
+```
 
-This template comes with a pre-configured cursor environment. To get started, [download cursor](https://www.cursor.com/downloads) and enable the `devvit-mcp` when prompted.
+### 3. Start the app
+```bash
+npm start
+```
+
+## 🛠 Tech Stack
+* React
+* TypeScript
+* CSS
+
+## 📚 How to Play
+1. Start Bingoji in Quick Play mode
+2. Pick 25 emojis you want (or you can choose to randomize your Bingo board)
+3. Emojis will be called every 3 seconds
+4. If you have Bingo (horizontally/vertically/diagonally) in 3 minutes, you win!!
+
+## 👩‍💻 Author
+* Project Manager: Minh Tran
+* UX/UI Designer: Kim Duong
+* Developer: Uyen Tran
