@@ -3,8 +3,6 @@
 Bingoji is a fun twist on classic Bingo — but with emojis instead of numbers!  
 Build your own emoji board, watch emojis get called in real time, and race to complete a line.  
 
-![Bingoji Screenshot](./public/bingoji-logo.svg)
-
 ---
 
 ## ✨ Features  
