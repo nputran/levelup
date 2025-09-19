@@ -1,12 +1,11 @@
 import React from 'react';
 
 interface TitleScreenProps {
-  onStart: () => void;
-  onTutorial: () => void;
   onQuickPlay: () => void;
+  onTutorial: () => void;
 }
 
-const TitleScreen: React.FC<TitleScreenProps> = ({ onStart, onTutorial, onQuickPlay }) => {
+const TitleScreen: React.FC<TitleScreenProps> = ({ onQuickPlay, onTutorial }) => {
   return (
     <div
       style={{
@@ -26,7 +25,7 @@ const TitleScreen: React.FC<TitleScreenProps> = ({ onStart, onTutorial, onQuickP
         🎉 Welcome to Bingoji 🎉
       </h1>
       <p style={{ fontSize: '1.125rem', color: '#4B5563', textAlign: 'center', maxWidth: '400px' }}>
-        Battle with strangers and test your luck everyday!
+        Test your luck and have fun with Bingoji!
       </p>
 
       <div
@@ -39,22 +38,6 @@ const TitleScreen: React.FC<TitleScreenProps> = ({ onStart, onTutorial, onQuickP
           maxWidth: '280px',
         }}
       >
-        <button
-          onClick={onStart}
-          style={{
-            width: '100%',
-            backgroundColor: '#62aec5',
-            color: 'white',
-            fontWeight: 600,
-            padding: '12px 16px',
-            borderRadius: '16px',
-            cursor: 'pointer',
-            border: 'none',
-          }}
-        >
-          Start Multiplayer
-        </button>
-
         <button
           onClick={onQuickPlay}
           style={{
